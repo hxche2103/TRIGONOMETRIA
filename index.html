@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>abcf</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometría</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trigonometría</h1>
+        <nav>
+            <a href="#contenido">Contenido</a>
+            <a href="#practica">Práctica</a>
+            <a href="#evaluacion">Evaluación</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Contenido de Trigonometría -->
+        <section id="contenido" class="contenido">
+            <h2>Introducción a la Trigonometría</h2>
+            <p>
+                La trigonometría es una rama de las matemáticas que estudia las relaciones entre los ángulos y los lados de los triángulos. Es fundamental en diversas áreas como la ingeniería, la física, la arquitectura y la navegación.
+            </p>
+            <p>
+                Las funciones trigonométricas básicas son el seno, coseno y tangente, que relacionan los ángulos de un triángulo rectángulo con las proporciones de sus lados. Además, existen funciones trigonométricas inversas y otras derivadas como la cotangente, secante y cosecante.
+            </p>
+            <p>
+                La trigonometría también se extiende al análisis de ondas, oscilaciones y fenómenos periódicos, siendo esencial para comprender comportamientos en el mundo natural y tecnológico.
+            </p>
+        </section>
+
+        <!-- Sección de Práctica -->
+<section id="practica" class="practica">
+    
+   
+<h2>Sección de Práctica</h2>
+    <form id="practicaForm">
+        <label for="angulo1">Calcula el seno de 30°:</label>
+        
+ 
+<input type="text" id="angulo1" placeholder="Escribe tu respuesta aquí">
+        
+        
+        
+
+      
+
+   
+<label for="angulo2">Calcula el coseno de 45°:</label>
+        
+  
+<input type="text" id="angulo2" placeholder="Escribe tu respuesta aquí">
+        
+        
+
+        
+     
+
+        
+  
+
+        
+
+     
+
+ 
+<label for="angulo3">Calcula la tangente de 60°:</label>
+        
+        
+<input type="text" id="angulo3" placeholder="Escribe tu respuesta aquí">
+        
+        
+        
+  
+
+        
+
+      
+
+   
+<label for="angulo4">Calcula el seno de 90°:</label>
+        
+        
+<input type="text" id="angulo4" placeholder="Escribe tu respuesta aquí">
+        
+        
+     
+
+  
+<label for="angulo5">Calcula el coseno de 0°:</label>
+        
+       
+<input type="text" id="angulo5" placeholder="Escribe tu respuesta aquí">
+        
+        
+        
+        
+<button type="button" onclick="verificarPractica()">Verificar</button>
+        
+       
+<div id="resultadoPractica" class="resultado"></div>
+    </form>
+</section>
+
+<!-- Sección de Evaluación -->
+<section id="evaluacion" class="evaluacion">
+    
+    
+<h2>Evaluación de Trigonometría</h2>
+    
+    
+<form id="evaluacionForm">
+        
+        
+<div class="pregunta">
+            <h3>1. ¿Cuál es el valor de sin(90°)?</h3>
+            
+           
+<div class="opciones">
+                
+    
+
+ 
+<label><input type="radio" name="q1" value="A"> A) 0</label>
+                
+      
+
+   
+<label><input type="radio" name="q1" value="B"> B) 1</label>
+                
+    
+
+ 
+<label><input type="radio" name="q1" value="C"> C) -1</label>
+                
+               
+<label><input type="radio" name="q1" value="D"> D) √2/2</label>
+            
+            
+</div>
+        
+        
+</div>
+
+        
+
+<div class="pregunta">
+            
+           
+<h3>2. ¿Cuál es el valor de cos(0°)?</h3>
+            
+           
+<div class="opciones">
+                
+      
+
+    
+
+ 
+<label><input type="radio" name="q2" value="A"> A) 0</label>
+                
+                
+
+             
+
+          
+
+       
+
+    
+<label><input type="radio" name="q2" value="B"> B) 1</label>
+                
+                
+<label><input type="radio" name="q2" value="C"> C) -1</label>
+                
+      
+
+   
+<label><input type="radio" name="q2" value="D"> D) √2/2</label>
+            </div>
+        
+        
+</div>
+
+        
+
+        
+<div class="pregunta">
+            <h3>3. ¿Cuál es el valor de tan(45°)?</h3>
+            
+    
+
+ 
+<div class="opciones">
+                
+               
+<label><input type="radio" name="q3" value="A"> A) 1</label>
+                
+                
+<label><input type="radio" name="q3" value="B"> B) 0</label>
+                
+      
+
+   
+<label><input type="radio" name="q3" value="C"> C) √3</label>
+                
+    
+
+ 
+<label><input type="radio" name="q3" value="D"> D) -1</label>
+            
+           
+
+        
+
+     
+
+  
+</div>
+        
+        </div
+</div>
+
+        
+
+<div class="pregunta">
+            <h3>4. ¿Cuál es el valor de sin(30°)?</h3>
+            
+      
+
+   
+<div class="opciones">
+                
+   
+<label><input type="radio" name="q4" value="A"> A) 1</label>
+                
+                
+<label><input type="radio" name="q4" value="B"> B) 0.5</label>
+                
+                
+<label><input type="radio" name="q4" value="C"> C) √3/2</label>
+                
+           
+
+         
+
+      
+
+   
+<label><input type="radio" name="q4" value="D"> D) 1/√2</label>
+            
+       
+
+    
+
+ 
+</div>
+        
+        </div
+
+        </
+
+       
+</div>
+
+        
+
+<div class="pregunta">
+            
+           
+<h3>5. ¿Cuál es el valor de cos(60°)?</h3>
+            
+    
+
+  
+<div class="opciones">
+                
+    
+
+ 
+<label><input type="radio" name="q5" value="A"> A) 0.5</label>
+                
+                
+
+              
+
+           
+
+        
+
+    
+<label><input type="radio" name="q5" value="B"> B) √3/2</label>
+                
+           
+
+         
+
+      
+
+   
+<label><input type="radio" name="q5" value="C"> C) 1</label>
+                
+    
+
+  
+<label><input type="radio" name="q5" value="D"> D) -1</label>
+            
+           
+
+        
+
+     
+
+  
+</div>
+        
+        </div
+</div>
+
+        
+
+<div class="pregunta">
+            <h3>6. ¿Cuál es el valor de tan(60°)?</h3>
+            
+            
+<div class="opciones">
+                
+               
+
+            
+
+    
+
+  
+<label><input type="radio" name="q6" value="A"> A) 1</label>
+                
+              
+
+          
+
+       
+
+    
+
+ 
+<label><input type="radio" name="q6" value="B"> B) √3</label>
+                
+      
+
+   
+<label><input type="radio" name="q6" value="C"> C) 0</label>
+                
+      
+
+   
+<label><input type="radio" name="q6" value="D"> D) 1/√3</label>
+            
+            </div
+</div>
+        </div>
+
+        
+
+<div class="pregunta">
+            
+           
+<h3>7. ¿Cuál es el valor de sin(0°)?</h3>
+            
+            
+<div class="opciones">
+                
+              
+
+           
+
+        
+
+    
+<label><input type="radio" name="q7" value="A"> A) 1</label>
+                
+                
+
+             
+
+          
+
+       
+
+    
+<label><input type="radio" name="q7" value="B"> B) 0</label>
+                
+                
+<label><input type="radio" name="q7" value="C"> C) -1</label>
+                
+                
+
+           
+
+    
+<label><input type="radio" name="q7" value="D"> D) √3/2</label>
+            
+           
+</div>
+        
+     
+
+   
+</div>
+
+        
+
+       
+<div class="pregunta">
+            <h3>8. ¿Cuál es el valor de cos(90°)?</h3>
+            
+   
+<div class="opciones">
+                
+    
+
+ 
+<label><input type="radio" name="q8" value="A"> A) 0</label>
+                
+   
+<label><input type="radio" name="q8" value="B"> B) 1</label>
+                
+           
+
+        
+
+     
+
+  
+<label><input type="radio" name="q8" value="C"> C) -1</label>
+                
+                
+
+          
+
+       
+
+    
+<label><input type="radio" name="q8" value="D"> D) √3/2</label>
+            
+ 
+</div>
+        
+      
+
+   
+</div>
+
+        
+
+        
+<div class="pregunta">
+            <h3>9. ¿Cuál es el valor de tan(0°)?</h3>
+            
+            
+<div class="opciones">
+                
+             
+
+          
+
+       
+
+    
+<label><input type="radio" name="q9" value="A"> A) 1</label>
+                
+               
+<label><input type="radio" name="q9" value="B"> B) 0</label>
+                
+             
+
+          
+
+    
+<label><input type="radio" name="q9" value="C"> C) √3</label>
+                
+               
+
+           
+
+      
+<label><input type="radio" name="q9" value="D"> D) -1</label>
+            
+            
+
+        
+
+     
+
+  
+</div>
+        
+        
+
+  
+</div>
+
+        
+
+      
+
+
+ 
+<div class="pregunta">
+            
+         
+
+     <h3>10. ¿Cuál es el valor de sin(45°)?</h3>
+            <div class="opciones">
+                
+          
+
+       
+
+    
+
+ 
+<label><input type="radio" name="q10" value="A"> A) 1</label>
+                
+               
+<label><input type="radio" name="q10" value="B"> B) √2/2</label>
+                
+               
+<label><input type="radio" name="q10" value="C"> C) 0</label>
+                
+           
+
+        
+
+    
+<label><input type="radio" name="q10" value="D"> D) -1</label>
+            
+ 
+</div>
+        
+        </
+
+       
+
+    
+</div>
+
+        
+
+      
+
+
+  
+<button type="button" onclick="calificar()">Calificar Evaluación</button>
+    </form>
+    
+    
+<div id="resultadoEvaluacion" class="resultado-evaluacion"></div>
+
+</sec
+
+</
+</section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
